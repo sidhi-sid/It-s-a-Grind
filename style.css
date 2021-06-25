@@ -5,7 +5,13 @@ body{
     color: rgba(0,0,0,.87);
 }
 
+a{
+    color: black;
+}
+
 header{
+    z-index: 3;
+    position: relative;
     height: 101px; 
     box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
 }
@@ -13,6 +19,17 @@ header{
 .header-container{
     max-width: 1440px;
     margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 51px;
+    width: 51px;
+}
+
+.logo img{
     height: 100%;
 }
 
@@ -41,11 +58,53 @@ header{
     color:#008248
 }
 
-.logo{
-    height: 51px;
-    width: 51px;
+.right-nav{
+    display: flex;
+    align-items: center;
+}
+ 
+.sign-in,.join-now{
+    padding: 7px 16px;
+    border: 1px solid ;
+    border-radius: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    cursor: pointer;
 }
 
-.logo img{
-    height: 100%;
+.sign-in{
+    margin-right: 16px;
+}
+
+.find-store{
+    margin-right: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.find-store i{
+    padding-right: 8px;
+    font-size: 24px;
+    cursor:  pointer;
+}
+
+.find-store:hover{
+    color:#008248
+}
+
+.join-now{
+    background-color: black;
+    color: white;
+}
+
+.sign-in:hover{
+    background-color: rgba(0,0,0,.06);
+    transition: all .2s ease;
+}
+
+.join-now:hover{
+    background-color: rgba(0,0,0,.7);
+    border-color: rgba(0,0,0,.7);
+    transition: all .2s ease;
 }
